@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Edit Personal Information - PayDude™</title>
+		<!-- STEP 7b: link the provided CSS to style the form -->
+        <link rel="stylesheet" href="" type="text/css" />
+	</head>
+	<body>
+        <header>
+            <h1>PayDude™</h1>
+        </header>
+		<main>
+            <h2>Edit Account Information and Settings</h2>
+            <!-- STEP 1: After first uploading all of these lesson files to your Web server, set the action attribute for the form, then go to the bottom of the form for the next step -->
+            <form id="edit_payment_info" action="" method="get">
+                <!-- Note the hidden form element below - these can be used to other useful name/value pairs to the server -->
+                <input type="hidden" name="form_sent" value="1" />
+
+                <!-- STEP 8: Add a fieldset and legend element to encapsulate the contact information fields -->
+                Contact Information
+                    <!-- STEP 3: Build an input element for First Name and Last Name - include type, name, id, required, size, maxlength, and placeholder attributes -->
+                    <div>
+                        
+                         
+                    </div>
+                    <div>
+                        
+                         
+                    </div>
+                    <!-- STEP 4: Add label elements for each of the above input elements -->
+                    <div>
+                        <label for="address">Address Line 1</label>
+                        <input id="address" type="text" name="address" required />
+                    </div>
+                    <!-- STEP 5: Add a select element and label for choosing the province -->
+                    <div>
+                        
+                    </div>
+                    <!-- STEP 6: Add an input element for phone number (type="tel") -->
+                    <div>
+                        
+                    </div>
+                    <!-- STEP 7a: Include an input element and label for email (type="email"), then head to the top of the HTML to add CSS to make the form look better -->
+                    <div>
+                        
+                    </div>
+                
+                <fieldset>
+                    <legend>Security Settings</legend>
+                    <!-- STEP 9: Add an input for password -->
+                    <div>
+                        
+                    </div>                    
+                    <!-- STEP 10: Add an input and label for a profile photo (type="file") -->
+                    <div>
+                        
+                    </div>
+                    <!-- STEP 11 Include a textarea element with an associated label for a security question -->
+                    <div>
+                        
+                    </div>
+                    <!-- STEP 15: Surround both the MFA and the Alert Settings form elements with fieldsets and legends, then proceed to process-form.php for the next step -->
+                    Multi-Factor Authentication (MFA)
+                        <input type="radio" name="mfa" id="sms" value="sms" />
+                        <label for="sms">Text message (SMS)</label>
+                        <!-- STEP 12: Add a radio button and label for using phone call as an MFA choice - use a unique id and the same name as the above input to create a radio group -->
+                        
+                        <!-- STEP 13: Add a radio button and label for using an authentication app as an MFA choice -->
+                        
+                    </fieldset>
+                    Alert Settings
+                        <input type="checkbox" name="alert[]" id="alert1" value="push" />
+                        <label for="alert1">Push notification (mobile app)</label>
+                        <input type="checkbox" name="alert[]" id="alert2" value="email" />
+                        <label for="alert2">Email alert</label>
+                        <!-- STEP 14: Add another check box and label for text message alerts (SMS) with a unique id and the same name as the above input to create a checkbox group -->
+                        
+                    
+                </fieldset>
+                <!-- STEP 2: Add buttons or input elements to function as the reset and submit buttons -->
+                
+            </form>
+        </main>
+        <footer>
+            <p><small>©PayDude Inc. All rights reserved</small></p>
+        </footer>
+	</body>
+</html>
