@@ -25,7 +25,7 @@ function showDeliveryFrom(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCh
     takeoutForm.setAttribute("hidden", true);
 }
 
-function submitRequest(){
-    const message = document.getElementById("submitMessage");
-    message.removeAttribute("hidden", true);
-}
+// function submitRequest(){
+//     const message = document.getElementById("submitMessage");
+//     message.removeAttribute("hidden", true);
+// }

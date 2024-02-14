@@ -72,8 +72,11 @@ button{
     border-radius: 5px;
 }
 footer{
-    margin-top: 150px;
     border-top: solid 1px lightgrey;
     align-items: center;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
 }
