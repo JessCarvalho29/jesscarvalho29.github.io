@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Pizza delivery</title>
+  </head>
+  <body>
+    <header>
+          <div class="h1">
+          <h1 class="name-site">Authentic Italian Pizza </h1>
+          </div>
+          <div class="localization">
+          <img class="local" src="local.png">
+          <span>Toronto, ON</span>
+          </div>
+    </header>
+    <body>
+    <form>
+        <div class="first-column">
+        <label for="quantity">Number of Pizzas</label>
+        <select name="quantity" id="quantity" style="font-size: 15px;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <br><br>
+        <label for="size-pizza">Size of the Pizza</label><br>
+        <input type="checkbox" id="small-pizza" name="small-pizza" value="small">
+        <label for="small-pizza">Small Size</label><br>
+        <input type="checkbox" id="medium-pizza" name="size-pizza" value="medium">
+        <label for="medium-pizza">Medium Size</label><br>
+        <input type="checkbox" id="large-pizza" name="size-pizza" value="large">
+        <label for="large-pizza">Large Size</label><br>
+        <br><br>
+        <label for="shape-pizza">Shape of the Pizza</label><br>
+        <input type="checkbox" id="round" name="round" value="round">
+        <label for="round">Round pizza</label><br>
+        <input type="checkbox" id="square" name="square" value="square">
+        <label for="square">Square pizza</label><br>
+        <br><br>
+        <label for="toppings">Choose your Toppings</label><br>
+        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        <input type="checkbox" id="onions" name="onions" value="onions">
+        <label for="onions">Onions</label><br>
+        <input type="checkbox" id="bacon" name="bacon" value="bacon">
+        <label for="bacon">Bacon</label><br>
+        <input type="checkbox" id="ham" name="ham" value="ham">
+        <label for="ham">Ham</label><br>
+        <input type="checkbox" id="tomatoes" name="tomatoes" value="tomatoes">  
+        <label for="tomatoes">Tomatoes</label><br>
+        <input type="checkbox" id="extra-cheese" name="extra-cheese" value="extra-cheese">
+        <label for="extra-cheese">Extra cheese</label>
+    </div>
+    <div class="second-column">
+        <label for="crust">Crust of your Pizza</label><br>
+        <input type="checkbox" id="thin" name="thin" value="thin">
+        <label for="thin">Thin</label><br>
+        <input type="checkbox" id="thick" name="thick" value="thick">
+        <label for="thick">Thick</label><br>
+        <input type="checkbox" id="stuffed" name="stuffed" value="stuffed">
+        <label for="stuffed">Stuffed</label><br>
+        <br><br>
+        <label for="takeout-delivery">Choose one option:</label><br>
+        <input type="checkbox" id="takeout" name="takeout" value="takeout" onchange="deliveryForm(this.id)">
+        <label for="takeout">Take out</label><br>
+        <input type="checkbox" id="delivery" name="delivery" value="delivery" onchange="deliveryForm(this.id)">
+        <label for="delivery">Delivery</label><br>
+
+        
+        <div id="deliveryForm" hidden>
+          <br><br>
+            <grid class="delivery-takeout-grid-css">
+                <div class="right">
+                    <label for="name">Full name:</label><br>
+                    <label for="address">Address:</label><br>
+                    <label for="city">City:</label><br>
+                    <label for="province">Province:</label><br>
+                    <label for="phone">Phone number:</label>
+                </div>
+                <div class="left">
+                    <input type="text" id="name"><br>
+                    <input type="text" id="address"><br>
+                    <input type="text" id="city"><br>
+                    <select id="province" style="font-size: 15px;" >
+                        <option value=""></option>
+                        <option value="ON">Ontario</option>
+                        <option value="AL">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="QU">Quebec</option>
+                      </select><br>
+                    <input type="tel" id="phone"><br>
+                </div>
+            </grid>
+
+        </div>
+        <div id="takeoutForm" hidden>
+          <br><br>
+          <grid class="delivery-takeout-grid-css">
+              <div class="right">
+                  <label for="name">Full name:</label><br>
+                  <label for="phone">Phone number:</label>
+              </div>
+              <div class="left">
+                  <input type="text" id="name"><br>
+                  <input type="tel" id="phone"><br>
+                </div>
+          </grid>
+      </div>
+      <button type="button" id="submitButton" onclick="submitRequest()">Send order</button>
+      <div id="submitMessage" hidden>
+        <p>We received your order. Thank you for buying with us!</p>
+      </div>
+        </div>
+
+      </form>
+      <footer>
+        <p><small>© HTML, CSS, and JS Pizza Restaurant.</small></p>
+      </footer>
+
+      <script src="script.js"></script>
+
+  </body>
+</html>
