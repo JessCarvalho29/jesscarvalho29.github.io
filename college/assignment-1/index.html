@@ -37,17 +37,17 @@
           </select>
           <br><br>
           <label for="size-pizza">Size of the Pizza</label><br>
-          <input type="radio" id="small-pizza" name="pizza-size" value="small">
+          <input type="radio" id="small-pizza" name="pizza-size" value="small" required>
           <label for="small-pizza">Small Size</label><br>
-          <input type="radio" id="medium-pizza" name="pizza-size" value="medium">
+          <input type="radio" id="medium-pizza" name="pizza-size" value="medium" required>
           <label for="medium-pizza">Medium Size</label><br>
-          <input type="radio" id="large-pizza" name="pizza-size" value="large">
+          <input type="radio" id="large-pizza" name="pizza-size" value="large" required>
           <label for="large-pizza">Large Size</label><br>
           <br><br>
           <label for="shape-pizza">Shape of the Pizza</label><br>
-          <input type="radio" id="round" name="shape-pizza" value="round">
+          <input type="radio" id="round" name="shape-pizza" value="round" required>
           <label for="round">Round pizza</label><br>
-          <input type="radio" id="square" name="shape-pizza" value="square">
+          <input type="radio" id="square" name="shape-pizza" value="square" required>
           <label for="square">Square pizza</label><br>
           <br><br>
           <label for="toppings">Choose your Toppings</label><br>
@@ -68,17 +68,17 @@
         </div>
         <div class="second-column">
           <label for="crust">Crust of your Pizza</label><br>
-          <input type="radio" id="thin" name="crust" value="thin">
+          <input type="radio" id="thin" name="crust" value="thin" required>
           <label for="thin">Thin</label><br>
-          <input type="radio" id="thick" name="crust" value="thick">
+          <input type="radio" id="thick" name="crust" value="thick" required>
           <label for="thick">Thick</label><br>
-          <input type="radio" id="stuffed" name="crust" value="stuffed">
+          <input type="radio" id="stuffed" name="crust" value="stuffed" required>
           <label for="stuffed">Stuffed</label><br>
           <br><br>
           <label for="takeout-delivery">Choose one option:</label><br>
-          <input type="checkbox" id="takeout" name="takeout" value="takeout" onchange="deliveryForm(this.id)">
+          <input type="radio" id="takeout" name="takeout-delivery" value="takeout" onchange="deliveryForm(this.id)" required>
           <label for="takeout">Take out</label><br>
-          <input type="checkbox" id="delivery" name="delivery" value="delivery" onchange="deliveryForm(this.id)">
+          <input type="radio" id="delivery" name="takeout-delivery" value="delivery" onchange="deliveryForm(this.id)" required>
           <label for="delivery">Delivery</label><br>
 
 

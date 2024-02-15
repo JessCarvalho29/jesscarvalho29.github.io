@@ -5,28 +5,34 @@ function deliveryForm(id) {
     const deliveryForm = document.getElementById("deliveryForm");
     const takeoutCheckbox = document.getElementById("takeout");
     const deliveryCheckbox = document.getElementById("delivery");
+    const nameDelivery = document.getElementById("nameDelivery");
+    const nameTakeout = document.getElementById("nameTakeout");
 
     if(id === "delivery"){
-        showDeliveryFrom(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox);
+        showDeliveryFrom(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox, nameDelivery);
     } else {
-        showTakeoutForm(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox);
+        showTakeoutForm(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox, nameTakeout);
     }
 
     deliveryOrTakeout = id;
 }
 
-function showTakeoutForm(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox ){
+function showTakeoutForm(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox, nameTakeout){
     takeoutCheckbox.checked = true;
     deliveryCheckbox.checked = false;
     deliveryForm.setAttribute("hidden", true);
     takeoutForm.removeAttribute("hidden"); 
+    nameTakeout.setAttribute("required", true);
+    nameDelivery.removeAttribute("required");
 }
 
-function showDeliveryFrom(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox ){
+function showDeliveryFrom(takeoutForm, deliveryForm, takeoutCheckbox, deliveryCheckbox, nameDelivery){
     takeoutCheckbox.checked = false;
     deliveryCheckbox.checked = true;
     deliveryForm.removeAttribute("hidden"); 
     takeoutForm.setAttribute("hidden", true);
+    nameDelivery.setAttribute("required", true);
+    nameTakeout.removeAttribute("required");
 }
 
 function submitRequest(){
@@ -51,9 +57,9 @@ function submitRequest(){
     const getPizzaWay = deliveryOrTakeout;
     localStorage.setItem('deliveryOrTakeout', getPizzaWay);
 
-    console.log(localStorage.getItem('name'));
-    console.log(localStorage.getItem('quantity'));
-    console.log(localStorage.getItem('deliveryOrTakeout'));
+    // console.log(localStorage.getItem('name'));
+    // console.log(localStorage.getItem('quantity'));
+    // console.log(localStorage.getItem('deliveryOrTakeout'));
 
 }
 
