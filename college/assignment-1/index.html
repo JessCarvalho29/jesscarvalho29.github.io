@@ -15,13 +15,17 @@
       <h1 class="name-site">Authentic Italian Pizza </h1>
     </div>
     <div class="localization">
-      <img class="local" src="images/local.png">
+      <img class="local" src="images/local.png" alt="Local image"> 
       <span>Toronto, ON</span>
     </div>
   </header>
 
   <body>
     <main>
+      <p>
+        <img id="body-image" src="images/the-best-pizza.png" alt="The Best Pizza">
+      </p>
+
       <form action="message.html" method="get">
         <div class="first-column">
           <label for="quantity">Number of Pizzas</label>
@@ -89,7 +93,7 @@
                 <label for="phone">Phone number:</label>
               </div>
               <div class="left">
-                <input type="text" id="name"><br>
+                <input type="text" id="nameDelivery"><br>
                 <input type="text" id="address"><br>
                 <input type="text" id="city"><br>
                 <select id="province" style="font-size: 15px;">
@@ -99,7 +103,7 @@
                   <option value="BC">British Columbia</option>
                   <option value="QU">Quebec</option>
                 </select><br>
-                <input type="tel" id="phone"><br>
+                <input type="tel" id="phoneDelivery"><br>
               </div>
             </grid>
 
@@ -112,12 +116,12 @@
                 <label for="phone">Phone number:</label>
               </div>
               <div class="left">
-                <input type="text" id="name"><br>
-                <input type="tel" id="phone"><br>
+                <input type="text" id="nameTakeout"><br>
+                <input type="tel" id="phoneTakeout"><br>
               </div>
             </grid>
           </div>
-          <button type="submti" id="submitButton" onclick="submitRequest()">Send order</button>
+          <button type="submit" id="submitButton" onclick="submitRequest()">Send order</button>
 
         </div>
 

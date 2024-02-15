@@ -26,12 +26,16 @@ header{
 }
 main{
     margin-bottom: 20px;
-    clear: both;
-    min-height: 100%;
+    margin-left: 7%;
+}
+#body-image{
+    height: 200px;
+    width: 300px;
+    float: left;  
 }
 form{
     display: flex;
-    margin: auto;
+    /* margin: auto; */
     border: 2px solid black;
     border-radius: 10px;
     height: 500px;
@@ -84,7 +88,6 @@ footer{
     align-items: center;
     text-align: center;
     width: 100%;
-    position: fixed;
     bottom: 0;
     display: block;
     padding: 20px;
