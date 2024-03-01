@@ -1,6 +1,6 @@
 // Description: Recreation of the Simon Game for the Final Project of 24W Internet of Things - Arduino - 202
 // Created by Jessica Carvalho, Daniela Oliveira and Yuliya Vaneyeva
-// JYD Memory Game 27.02.2024
+// JYD Memory Game 29.02.2024
 
 const int pushButtons = 0;
 const int redLED = 6;
@@ -18,7 +18,6 @@ int gameLevel = 0;
 int countPressedButtons = 0;
 bool playerTurn = false;
 bool nextLevelGame = false;
-// int redButtonStartsGame = 0;
 
 int arrayComputerGame[50] = {};
 int arrayPlayerInput[50] = {};
@@ -42,8 +41,6 @@ void loop()
   mainFunctionGame();
 }
 
-// se a pessoa clicar num botao não vai fazer nada
-// Se a pessoa errar, mostrar Game over e recomeçar
 // mensagens a cada etapa no LCD
 
 void mainFunctionGame()
@@ -52,8 +49,9 @@ void mainFunctionGame()
   if (redButtonStartsGame == 1)
   {
     nextLevelGame = true;
+    Serial.println("Game started. Good luck!");
+    delay(1000);
   }
-  delay(1000);
 
   if (nextLevelGame == true)
   {
@@ -81,14 +79,8 @@ void mainFunctionGame()
     while (playerTurn == true)
     {
 
-      if (countPressedButtons == gameLevel) //(gameLevel + 1)
-      {
-        resultGame();
-        if (nextLevelGame == false)
-        {
-          endGame();
-          break;
-        }
+      if (countPressedButtons == gameLevel) 
+      {        
         Serial.println("buttonPressed");
         Serial.println(countPressedButtons);
         countPressedButtons = 0;
@@ -104,16 +96,17 @@ void mainFunctionGame()
       if (pressedButton > 0)
       {
         playStep(pressedButton, countPressedButtons);
+        validateMove();
         Serial.println("Player");
         Serial.println(pressedButton);
         countPressedButtons++;
+        if (nextLevelGame == false)
+        {
+          endGame();
+          break;
+        }
       }
     }
-
-    // gameLevel = gameLevel + 1;
-
-    // Serial.println(gameLevel);
-    // Serial.println("Fim do level");
 
     delay(1000);
   }
@@ -127,31 +120,26 @@ void endGame()
   playerTurn = false;
   gameLevel = 0;
   nextLevelGame = false;
-  // redButtonStartsGame = 0;
   Serial.println("Game Over");
   delay(500);
   Serial.println("Press the red button to start the game.");
 }
 
-void resultGame()
+void validateMove()
 {
-  for (int i = 0; i < gameLevel; i++) //<= gameLevel
-  {
-    if (arrayComputerGame[i] == arrayPlayerInput[i])
+    if (arrayComputerGame[countPressedButtons] == arrayPlayerInput[countPressedButtons])
     {
       nextLevelGame = true;
     }
     else
     {
       nextLevelGame = false;
-      break;
     }
-  }
 }
 
 void cleanPlayerMove()
 {
-  for (int i = 0; i < gameLevel; i++) //<= gameLevel
+  for (int i = 0; i < gameLevel; i++) 
   {
     arrayPlayerInput[i] = 0;
   }
@@ -159,7 +147,7 @@ void cleanPlayerMove()
 
 void cleanComputerMove()
 {
-  for (int i = 0; i < gameLevel; i++) //<= gameLevel
+  for (int i = 0; i < gameLevel; i++) 
   {
     arrayComputerGame[i] = 0;
   }
