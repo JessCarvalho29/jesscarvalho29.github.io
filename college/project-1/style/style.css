@@ -220,6 +220,12 @@ a{
   font-size: 10px;
 }
 
+.sidebar-link a {
+  text-decoration: none;
+  color: black;
+}
+
+
 .login-container{
   border: 1px solid black;
   border-radius: 20px;
