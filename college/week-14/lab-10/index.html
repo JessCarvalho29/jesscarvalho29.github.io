@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 10 - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>DMAS</h1>
+      <div class="input-group">
+        <label for="input1">First Number:</label>
+        <input
+          type="text"
+          id="input1"
+          placeholder="Input 1"
+          pattern="[0-9]*"
+          required
+        />
+        <br>
+        <label for="input2">Second Number:</label>
+        <input
+          type="text"
+          id="input2"
+          placeholder="Input 2"
+          pattern="[0-9]*"
+          required
+        />
+      </div>
+      <div class="button-group">
+        <button onclick="sum()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="division()">Division</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
