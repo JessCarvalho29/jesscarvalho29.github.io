@@ -1,0 +1,57 @@
+  body{
+    background-color: lightblue;
+    width: 600px;
+  }
+
+  /* grouped selector */
+  header h1, main h2, main p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1{
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 5px;
+  }
+
+  h1 em{
+    color: red;
+  }
+
+  main{
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  /* nested/contextual selector */
+  main h2.special {
+    font-style: italic;
+  }
+
+  /* class selector */
+  .special{
+    background-color: white;
+  }
+
+  p{
+    font-size: 18px;
+    width: 550px;
+  }
+
+  /* ID selector */
+  #intro{
+    background-color: lightyellow;
+    border: 2px dashed black;
+  }
+
+  footer{
+    margin-top:18px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
