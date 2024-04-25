@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic tac toe</title>
+  <link rel="stylesheet" href="styles/tic-tac-toe.css">
+
+</head>
+
+<body>
+  <p class="title">Tic tac toe</p>
+  
+
+  <div class="container">
+    <div class="centered">
+      <p class="js-next-player"></p>
+      <div class="line1-grid">
+        <button id="0" class="line1" onclick="
+          handleClick(this, 0); 
+        "> </button>
+        <button id="1" class="line1" onclick="
+          handleClick(this, 1);
+        "> </button>
+        <button id="2" class="line1" onclick="
+          handleClick(this, 2);
+        "> </button>
+      </div>
+      <div class="line2-grid">
+        <button id="3" class="line2" onclick="
+          handleClick(this, 3);
+        "></button>
+        <button id="4" class="line2" onclick="
+          handleClick(this, 4);
+        "></button>
+        <button id="5" class="line2" onclick="
+          handleClick(this, 5);
+        "></button>
+      </div>
+      <div class="line3-grid">
+        <button id="6" class="line3" onclick="
+          handleClick(this, 6);
+        "></button>
+        <button id="7" class="line3" onclick="
+          handleClick(this, 7);
+        "></button>
+        <button id="8" class="line3" onclick="
+          handleClick(this, 8);
+        "></button>
+      </div>
+      <div>
+        <button class="js-reset-game reset-button">Reset Game</button>
+        <p class="js-result result"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="code/tic-tac-toe.js"></script>
+</body>
+
+</html>

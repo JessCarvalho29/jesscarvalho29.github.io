@@ -1,0 +1,99 @@
+body{
+    width: 100%;
+    padding-top: 100px;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    background-color: white;
+    color: rgb(218, 117, 35);
+    border-bottom: solid 1px lightgrey;
+}
+.h1{
+    width: 80%;
+    margin-left: 20px;
+}
+.localization{
+    display: grid;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    color: black;
+    grid-template-columns: 20px 100px;
+    column-gap: 10px;
+}
+main{
+    margin-bottom: 20px;
+    margin-left: 7%;
+}
+#body-image{
+    height: 200px;
+    width: 300px;
+    float: left;  
+}
+form{
+    display: flex;
+    /* margin: auto; */
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 480px;
+    width: 550px;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.first-column{
+    width: 50%;
+
+}
+.second-column{
+    width: 50%;
+}
+.local{
+    height: 40px;
+    width: 30px;
+}
+.delivery-takeout-grid-css{
+    display: grid;
+    grid-template-columns: 150px 100px;
+    align-items: center;
+    text-align: right;
+    column-gap: 10px;
+    border: 1px solid black;
+    width: 320px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+
+}
+.right{
+    grid-column: 1;
+}
+.left{
+    grid-column: 2;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(218, 117, 35);
+    color: white;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+footer{
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    border-top: solid 1px lightgrey;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}

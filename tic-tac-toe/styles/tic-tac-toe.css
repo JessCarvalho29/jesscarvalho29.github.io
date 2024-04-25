@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.line1-grid,
+.line2-grid,
+.line3-grid {
+  display: grid;
+  grid-template-columns: 44px 44px 44px;
+  column-gap: 10px;
+  row-gap: 10px;
+  color: black;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  margin: auto;
+  width: 50%;
+}
+
+.line1,
+.line2,
+.line3 {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+
+}
+
+.reset-button {
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+

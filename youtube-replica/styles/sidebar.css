@@ -1,0 +1,108 @@
+@media (max-width: 435px){
+  .sidebar{
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 55px;
+  
+    background-color: white;
+    width: 50px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  .sidebar-link{
+    background-color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .sidebar-link:hover{
+    background-color: lightgray;
+  }
+  /* This means that we are targeting all images inside the sidebar-link */
+  .sidebar-link img{
+    height: 24px;
+    /* margin-bottom: 5px;
+    margin-top: 5px; */
+    margin: 5px'
+  }
+  .sidebar-link div{
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+}
+
+@media (min-width:436px) and (max-width: 1200px){
+.sidebar{
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+.sidebar-link{
+  background-color: white;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.sidebar-link:hover{
+  background-color: lightgray;
+}
+/* This means that we are targeting all images inside the sidebar-link */
+.sidebar-link img{
+  height: 24px;
+  margin-bottom: 5px;
+}
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+}
+
+@media (min-width: 1200.1px){
+  .sidebar{
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 200px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  .sidebar-link{
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 10px;
+    margin-left: 20px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .sidebar-link:hover{
+    background-color: lightgray;
+  }
+  .sidebar-link div{
+    font-size: 14px;
+  }
+  .sidebar-link img{
+    height: 24px;
+    /* margin-bottom: 5px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

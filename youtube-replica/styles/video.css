@@ -1,0 +1,181 @@
+.thumbnail{
+  /* When we set a width of an image, the height also changes */
+  /* width of a 100% to fit the image inside the grid */
+  width: 100%;
+}
+.video-title{
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.video-author, .video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.video-author{
+  margin-bottom: 4px;
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 435px){
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 436px) and (max-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+@media (min-width: 1001px) and (max-width: 1450px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1450px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-author{
+    font-size: 14px;
+  }
+
+  .video-stats{
+    font-size: 14px;
+  }
+}
+
+/*.channel-picture{
+   display: inline-block;
+  width: 50px;
+  vertical-align: top; 
+}*/
+
+.video-info{
+  display: inline-block;
+  width: 245px;
+}
+.profile-picture{
+  width: 36px;
+  border-radius: 50px;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-time{
+  background-color: black;
+  color: white;
+  /* font-family: Roboto, Arial; */
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Challenge Exercise - 16d */
+.tooltip-channel{
+  display: flex;
+  grid-template-columns: 48px 1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.channel-info-tooltip{
+  display: inline-block;
+  width: 150px;
+}
+
+.channel-picture-tooltip{
+  width: 50px;
+  border-radius: 50px;
+}
+
+.channel-name{
+  /* font-family: Roboto, arial; */
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+
+.channel-subscribers{
+  /* font-family: Roboto, arial; */
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}
+
+.channel-picture{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel-picture:hover .tooltip-channel{
+  opacity: 1
+}
+
+.channel-picture .tooltip-channel{
+  position: absolute;
+  background-color: white;
+  padding: 12px 12px;
+  border-radius: 6px;
+  /* bottom: -12px; */
+  top: 48px;
+  left: 0px;
+  z-index: 300;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.15s;
+  /* To don't show when the pointer is over the message, just over the button */
+  pointer-events: none;
+  /* To prevent the text to wrap */
+  /* white-space: nowrap; */
+}
+
+/* Shortcuts:
+1. padding: vertical-padding horizontal-padding;
+2. padding: top-padding right-padding bottom-padding left-padding
+3. margin: 
+    one value: all directions
+    two values: vertical horizontal
+    four values: top right bottom left
+border: width style color
+4. inheritance: some properties inherities to their chields, get passed down from the outer elements to the inner elements - usually are text properties.
+5. Specificity: CSS will respecty the more specific style, overriding a more general style.
+6. Semantic elements: are elements that build a webpage. It helps the robots to better understand the page.
+    ex: <header> <nav> <main> <section> <footer>
+ */
+

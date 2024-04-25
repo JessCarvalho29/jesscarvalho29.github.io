@@ -5,34 +5,46 @@ body {
 	font-family: Tahoma, Verdana, sans-serif;
 	color: #333;
 	margin: 0 auto;
-	min-width: 768px;
-	max-width: 1024px;
+    padding: 20px;
 }
 main {
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
 }
-main aside {
-	width: 40%;
-    bottom: 200px;
-    position: relative;
+.left-part{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-main section {
-	width: 60%;
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 600px;
+}
+.about-text{
+    text-align: justify;
+    text-justify: inter-word;
 }
 a{
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
+.right-part{
+    flex: 1;
+    position: relative;;
+}
+.image{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
 img{
     width: 350px;
     height: 250px;
-    position: relative;
-    margin-top: 50px;
-}
-h1{
-    margin-top: 50px;
 }
 figcaption{
     color: gray;

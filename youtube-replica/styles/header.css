@@ -1,0 +1,217 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+/* Setting a width to the left and right section 
+and a flex to the middle section, that will resize with the page */
+
+.left-section{
+  /* We can remove the width now that we already have the itens of our div, the flexbox will take the size of the itens inside 
+  width: 150px; */
+
+  /* align-items doesn't do anything here because the flebox is the .header
+  this section is just a div inside a flexbox
+  flexbox only afects one layer 
+  That's why we need to put another flexbox in this section*/
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.youtube-logo{
+  height: 20px;
+}
+
+.middle-section{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+
+  /* limit the width of the middle section */
+  max-width: 500px;
+
+  display: flex;
+  align-items: center;
+}
+.search-button{
+  height: 40px;
+  width: 66px;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(204, 204, 204);
+  /* negative margin subtracts the space and pulls the element to that side */
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.search-button, 
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.profile-picture-container,
+.notifications-icon-container{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button:hover .tooltip, 
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.profile-picture-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+  opacity: 1;
+}
+.search-button .tooltip, 
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.profile-picture-container .tooltip,
+.notifications-icon-container .tooltip{
+  /* font-family: Roboto, Arial; */
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  /* To don't show when the pointer is over the message, just over the button */
+  pointer-events: none;
+  /* To prevent the text to wrap */
+  white-space: nowrap;
+}
+.search-icon{
+  height: 25px;
+}
+.voice-search-button{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(247, 247, 247);
+  border: none;
+  border-radius: 20px;
+}
+.search-voice-icon{
+  height: 24px;
+}
+.search-bar{
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  /* remove the default width, allowing to shrink*/
+  width: 0;
+}
+.search-bar::placeholder{
+  /* font-family: Roboto; */
+  font-size: 16px;
+}
+
+.right-section{
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* prevent the content to shrink when the page is resized */
+  flex-shrink: 0;
+}
+.upload-icon{
+  height: 24px;
+}
+.youtube-apps-icon{
+  height: 24px;
+}
+.notifications-icon-container{
+  position: relative;
+}
+.notifications-icon{
+  height: 24px;
+}
+.notifications-count{
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.current-user-picture{
+  height: 32px;
+  border-radius: 16px;
+}
+
+@media (max-width: 435px){
+  .hamburger-menu{
+    height: 24px;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  .youtube-logo{
+    height: 20px;
+  }
+  .middle-section{
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 25px;
+  
+    /* limit the width of the middle section */
+    max-width: 500px;
+  
+    display: flex;
+    align-items: center;
+  }
+  .search-bar{
+    width: 20px;
+  }
+  .search-button{
+    width: 30px;
+    margin-right: 13px;
+  }
+  .right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: white;
+    border-top: 1px solid rgb(222, 222, 222);
+    z-index: 100;
+    /* prevent the content to shrink when the page is resized */
+    flex-shrink: 0;
+  }
+
+}
+
+
