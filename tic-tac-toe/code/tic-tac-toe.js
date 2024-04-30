@@ -6,13 +6,15 @@ let playControl = true;
 
 function handleClick(button, arrayIndex){
   if(playControl){
-    const result = character();
-    boardGame[arrayIndex] = result;
-    button.innerHTML = result;
-    validateGame();
-    nextPlayer(result);
-    document.querySelector('.js-next-player')
-      .innerHTML = `Next player: ${next}`;
+    if(boardGame[arrayIndex] === null){
+      const result = character();
+      boardGame[arrayIndex] = result;
+      button.innerHTML = result;
+      validateGame();
+      nextPlayer(result);
+      document.querySelector('.js-next-player')
+        .innerHTML = `Next player: ${next}`;
+    }
   }
 }
 
@@ -86,6 +88,5 @@ function resetGame() {
   }  
 }
 
-// does not let to play after endGame
-// does not let to press a button again
+
 

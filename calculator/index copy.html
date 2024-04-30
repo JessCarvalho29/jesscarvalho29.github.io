@@ -14,7 +14,6 @@
       <div style="margin-bottom: 0" class="line-1">
         <button
           onclick="
-        count = 0;
         calculation = '';
         showUpdate();
         console.log('Cleared');
@@ -24,43 +23,19 @@
         >
           AC
         </button>
-        <!-- <button
+        <button
           onclick="
-        count--;
         calculation = calculation.slice(0, -1);
         showUpdate();
       "
           class="clear-button"
         >
           C
-        </button> -->
+        </button>
+        <button class="porcentagem-button">%</button>
         <button
           onclick="
-        calculation = calculation * -1;
-        showUpdate();
-      "
-          class="invert-signal-button"
-        > 
-          <img src="icons/sign-plus-minus.png" class="plus-minus-icon" >
-        </button>
-        <button 
-          onclick="
-            if(count > 0){
-            calculation = eval(calculation/100);
-            showUpdate();
-            localStorage.setItem('calculator', calculation);
-          }
-          "
-          class="porcentagem-button"
-        >
-          %
-
-        </button>
-        <button
-          onclick="
-          if(count !== 0){
-            updateCalculation('/');
-          }
+        updateCalculation('/');
       "
           class="operator-button"
         >
@@ -94,9 +69,7 @@
         </button>
         <button
           onclick="
-          if(count !== 0){
-            updateCalculation('*');
-          }
+        updateCalculation('*');
       "
           class="operator-button"
         >
@@ -130,9 +103,7 @@
         </button>
         <button
           onclick="
-          if(count !== 0){
-            updateCalculation('-');
-          }
+        updateCalculation('-');
       "
           class="operator-button"
         >
@@ -166,9 +137,7 @@
         </button>
         <button
           onclick="
-          if(count !== 0){
-            updateCalculation('+');
-          }
+        updateCalculation('+');
       "
           class="operator-button"
         >
@@ -186,11 +155,7 @@
         </button>
         <button
           onclick="
-          if(count === 0){
-            updateCalculation('0.');
-          } else {
-            updateCalculation('.');
-          }
+        updateCalculation('.');
       "
           class="number-button"
         >
@@ -198,12 +163,10 @@
         </button>
         <button
           onclick="
-          if(count !== 0){
-            calculation = eval(calculation);
-            showUpdate();
-            localStorage.setItem('calculator', calculation);
-          }
-        "
+        calculation = eval(calculation);
+        showUpdate();
+        localStorage.setItem('calculator', calculation);
+      "
           class="operator-button equal-sign"
         >
           =
