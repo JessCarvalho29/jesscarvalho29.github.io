@@ -164,6 +164,7 @@ and a flex to the middle section, that will resize with the page */
 }
 .current-user-picture{
   height: 32px;
+  width: 32px;
   border-radius: 16px;
 }
 

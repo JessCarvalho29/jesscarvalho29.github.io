@@ -3,63 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/style.css" />
-    <title>Jessica's Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/styles/general.css" />
+    <link rel="stylesheet" href="public/styles/header.css" />
+    <link rel="stylesheet" href="public/styles/home.css" />
+    <link rel="stylesheet" href="public/styles/footer.css" />
+
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon.png" />
+
+    <title>Jessica Carvalho</title>
   </head>
   <body>
+    <header>
+      <div class="left-section">
+        <img src="public/images/logo-jessica-carvalho-2.png" class="logo-header" />
+      </div>
+      <div class="middle-section">
+        <nav>
+          <ul>
+            <!-- <li>Work & Education</li> -->
+            <!-- <li><a href="#my-projects">Things I've Built</a></li> -->
+            <!-- <li>Contact</li> -->
+            <!-- <li>More Information</li> -->
+          </ul>
+        </nav>
+      </div>
+      <div class="right-section">
+        <a href="public/Resume Jessica Carvalho.pdf"><button class="download-resume-button">RESUME</button></a>
+        <!-- <button class="projects-button">Projects</button> -->
+      </div>
+      <!-- <div class="divisory-line"></div> -->
+    </header>
     <main>
-      <div class="left-part">
-        <section>
+      <section class="brief-description">
+        <div class="section-title">Who I Am</div>
+        <div class="description">
           <div>
-            <h1>Jessica Carvalho</h1>
-            <br />
-            <h2>About me</h2>
-            <p class="about-text">
-              I'm Jessica, a finance professional with a passion for computer
-              programming. Currently, I'm enrolled at Georgian@Ilac College,
-              where I'm in my second term of the computer programming program.
-              My background includes hands-on experience in finance and payment
-              methods, which I'm now blending with my growing expertise in
-              technology.
-            </p>
+            Hey there! I'm Jessica, and I discovered a joy in the world of coding. It all began back in high school when I first studied coding. But my deep interest really developed during my last work experience, where I participated in and managed several projects, closely collaborating with the technology team.
           </div>
-          <br />
           <div>
-            <h2>Projects</h2>
+            My background includes hands-on experience in finance and payment methods, which I'm now blending with my growing expertise in technology. I understand the intricacies of financial systems and how they interact with technology, giving me an edge in developing innovative solutions.
+          </div>
+          <div>         
+            Ever since then, I've been constantly searching to learn more about technology. I've taken courses, attended workshops, and worked on personal projects, all to get better at software development. I am currently enrolled at Georgian@Ilac College, where I'm in my second term of the computer programming program. In my journey, I've jumped at every chance to learn and improve.
+          </div>
+          <div>
+            My goal? To make a transition into a career in software development with a big smile on my face and a hunger for excellence. Even though I'm still wrapping up my studies, I'm already eager to apply my skills and dive into real-world projects. Let's connect and create something amazing together!
+          </div>
+          <div class="listed-technologies">
+            Here are a few technologies I've been diving into recently:
+            <nav>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Java</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="links">
+          <nav>
             <ul>
-              <li><a href="/youtube-replica/">Copy of Youtube</a></li>
-              <li><a href="/calculator/">Copy of Iphone Calculator</a></li>
-              <li><a href="/pizza-website/">Order Pizza Page</a></li>
-              <li><a href="/stopwatch/">Stopwatch</a></li>
-              <li><a href="/to-do-list/">To Do List</a></li>
-              <li><a href="/tic-tac-toe/">Tic Tac Toe Game</a></li>
               <li>
-                <a href="/rock-paper-scissors/">Rock Paper Scissors Game</a>
+                <div class="icon-container">
+                  <a href="www.linkedin.com/in/carvalhosilva-jessica"
+                    ><img src="public/icons/icon _Linkedin.png" class="icon"
+                  /></a>
+                  <a href="www.linkedin.com/in/carvalhosilva-jessica"
+                    >LinkedIn</a
+                  >
+                </div>
               </li>
               <li>
-                <a
-                  href="https://www.tinkercad.com/things/cCW4MazmSsN-simon-game?sharecode=vbj4gGkODK_Zj0uRlM-XlyEDe3CFKxkQoCUoUujEoe0"
-                  >Simon Game (Arduino)</a
-                >
+                <div class="icon-container">
+                  <a href="https://github.com/JessCarvalho29"
+                    ><img src="public/icons/icon _GitHub.png" class="icon"
+                  /></a>
+                  <a href="https://github.com/JessCarvalho29">Github</a>
+                </div>
               </li>
             </ul>
+          </nav>
+        </div>
+        <div class="divisory-line"></div>
+      </section>
+      <section class="projects">
+        <div class="section-title"><a id="my-projects">Projects</a></div>
+        <div class="portfolio-grid">
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/rock-paper-scissors/"><img src="public/images/Rock, paper, scissors.png" /></a>
+            </div>
+            <div class="title-project"><a href="/rock-paper-scissors/">Rock, paper, scissors Game</a></div>
+            <div class="description-project">
+              <div>JavaScript</div>
+              <div>HTML</div>
+              <div>CSS</div>
+              <!-- JavaScript - HTML - CSS -->
+            </div>
           </div>
-        </section>
-      </div>
-      <div class="right-part">
-        <figure class="image">
-          <img src="public/programmer.jpg" alt="Programmer" />
-          <figcaption>
-            <small
-              ><a
-                href="https://www.vecteezy.com/vector-art/4865921-programmer-people-concept-use-laptop-and-programming-code-program-icon-spreading-with-modern-flat-style"
-                >Programmer people [Photograph], by Ghozi Microstock, n.d.,
-                Vecteezy.</a
-              ></small
-            >
-          </figcaption>
-        </figure>
-      </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/tic-tac-toe/"><img src="public/images/Tic tac toe.png" /></a>
+            </div>
+            <div class="title-project"><a href="/tic-tac-toe/">Tic tac toe Game</a></div>
+            <div class="description-project">JavaScript - HTML - CSS</div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a
+                  href="https://www.tinkercad.com/things/cCW4MazmSsN-simon-game?sharecode=vbj4gGkODK_Zj0uRlM-XlyEDe3CFKxkQoCUoUujEoe0"
+                  ><img src="public/images/Simon game.png" /></a>
+            </div>
+            <div class="title-project"><a
+              href="https://www.tinkercad.com/things/cCW4MazmSsN-simon-game?sharecode=vbj4gGkODK_Zj0uRlM-XlyEDe3CFKxkQoCUoUujEoe0"
+              >Simon Game</div></a>
+            <div class="description-project">Tinkercad - C++ - Arduino</div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/to-do-list/"><img src="public/images/To Do List.png" /></a>
+            </div>
+            <div class="title-project"><a href="/to-do-list/">To Do List</a></div>
+            <div class="description-project">JavaScript - HTML - CSS</div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/calculator/"><img src="public/images/Calculator.png" /></a>
+            </div>
+            <div class="title-project"><a href="/calculator/">Calculator</a></div>
+            <div class="description-project">JavaScript - HTML - CSS</div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/stopwatch/"><img src="public/images/Stopwatch.png" /></a>
+            </div>
+            <div class="title-project"><a href="/stopwatch/">Stopwatch</a></div>
+            <div class="description-project">JavaScript - HTML - CSS</div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/youtube-replica/"><img src="public/images/youtube-replica2.png" /></a>
+            </div>
+            <div class="title-project"><a href="/youtube-replica/">Youtube Replica</a></div>
+            <div class="description-project">HTML - CSS</div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="image-project">
+              <a href="/pizza-website/"><img src="public/images/Authentic Italian Pizza.png" /></a>
+            </div>
+            <div class="title-project"><a href="/pizza-website/">Pizza Website</a></div>
+            <div class="description-project">JavaScript - HTML - CSS</div>
+          </div>
+
+        </div>
+        <div class="divisory-line" style="margin-bottom: 15px;"></div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-container">
+      <small>Created by Jessica Cavalho</small>
+    </div>
+    </footer>
   </body>
 </html>

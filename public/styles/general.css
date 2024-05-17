@@ -1,0 +1,11 @@
+body{
+  background-color: rgb(240, 240, 238);
+  color: rgb(74, 74, 74);
+  font-family: "Open Sans", sans-serif;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
