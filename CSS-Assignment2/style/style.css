@@ -9,6 +9,8 @@ h1{
 }
 .video{
   margin-bottom: 15px;
+  width: 420px;
+  height: 220px;
 }
 main{
   position: relative;
