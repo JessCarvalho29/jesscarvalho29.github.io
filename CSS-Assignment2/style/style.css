@@ -1,0 +1,56 @@
+body{
+  font-size: 20px;
+  font-family: Roboto;
+  background-color: pink;
+}
+h1{
+  font-family: Satisfy;
+  margin-bottom: 0;
+}
+.video{
+  margin-bottom: 15px;
+}
+main{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+p{
+  font-size: medium;
+}
+.playful-energetic{
+  color: orange
+}
+.worry{
+  color: gray;
+}
+.feminine-young-innocent{
+  color: rgb(237, 129, 147);
+}
+.feminine-young-innocent-light{
+  color: rgb(239, 160, 173);
+}
+.Jaro{
+  font-family: Jaro;
+  font-size: 20px;
+  line-height: 20px;
+}
+.Satisfy{
+  font-family: Satisfy;
+  font-size: 25px;
+  line-height: 20px;
+}
+
