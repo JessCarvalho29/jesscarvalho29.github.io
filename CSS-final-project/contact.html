@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/cloud.png" />
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <a href="index.html"
+          ><img
+            src="images/logo-css.png"
+            alt="Logo Little Dream"
+            class="logo-header"
+        /></a>
+      </div>
+      <div class="mid-section">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-section">
+        <a href="donate-form.html" class="donate-button">DONATE</a>
+      </div>
+      <div class="hamburguer-menu-links" id="myLinks">
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate-form.html" class="hamburguer-menu-donate">DONATE</a>
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="hamburguer-menu-icon"
+        onclick="myFunction()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+    <main>
+      <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="subject">Reason for donation</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="section-row">
+        <div class="section-column">
+          Designed by Navakash  
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="left-section-footer">
+        <small>© 2024 Little Dream International</small>
+      </div>
+      <div class="mid-section-footer">
+        <nav>
+          <ul>
+            <li>
+              <a href="privacy-policy.html" class="links-footer"
+                >Privacy Policy</a
+              >
+            </li>
+            <li><a href="contact.html" class="links-footer">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-section-footer">
+        <img
+          src="images/facebook-v1.svg"
+          alt="Logo Facebook"
+          class="facebook-logo"
+        />
+        <img
+          src="images/instagram.svg"
+          alt="Logo Instagram"
+          class="instagram-logo"
+        />
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var hamburguerMenuLinks = document.getElementById("myLinks");
+        if (hamburguerMenuLinks.style.display === "block") {
+          hamburguerMenuLinks.style.display = "none";
+        } else {
+          hamburguerMenuLinks.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

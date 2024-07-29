@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Little Dream - Help our Kids</title>
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/cloud.png" >
+</head>
+<body>
+    <header>
+        <div class="left-section">
+          <a href="index.html"
+            ><img
+              src="images/logo-css.png"
+              alt="Logo Little Dream"
+              class="logo-header"
+          /></a>
+        </div>
+        <div class="mid-section">
+          <nav>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-section">
+          <a href="donate-form.html" class="donate-button">DONATE</a>
+        </div>
+        <div class="hamburguer-menu-links" id="myLinks">
+          <a href="about.html">About</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="donate-form.html" class="hamburguer-menu-donate">DONATE</a>
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="hamburguer-menu-icon"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About Little Dream - Help our Kids</h1>
+                <p>Empowering children’s health through dedicated care and support. Our charity provides essential medical services, funds groundbreaking research, and delivers health education to ensure every child has the opportunity for a healthier future. Join us in making a difference in young lives today.</p>
+            </div>
+        </section>
+
+       
+
+        <section class="about-us">
+            <div class="content-wrapper">
+                <h2>Our Mission</h2>
+                <div class="content">
+                    <img src="images/Mission.jpg" alt="Mission Image" class="image-left">
+                    <p class="animate">Little Dream is dedicated to empowering underprivileged children and families by providing access to education, healthcare, and essential resources. Our mission is to create a nurturing environment where dreams can flourish, enabling individuals to overcome challenges <br> and build a brighter future. Through community-driven initiatives, we aim to inspire hope, foster resilience, and cultivate opportunities for lasting positive change.</p>
+                </div>
+                
+                <h2>Our Vision</h2>
+                <div class="content">
+                    <img src="images/Vision.jpg" alt="Vision Image" class="image-right">
+                    <p class="animate">Little Dream envisions a world where every child, regardless of their background, <br> has the opportunity to pursue and achieve their dreams. By providing access to quality education, essential healthcare, and a supportive community, we aim to empower children to reach their full potential.</p>
+                </div>
+                
+                <h2>Our Programs</h2>
+                <div class="content">
+                    <img src="images/Program.jpg" alt="Programs Image" class="image-left">
+                    <p class="animate">Little Dream is dedicated to empowering underprivileged children by providing them with the education, resources, and support they need to realize their dreams. <br> Through various programs and initiatives, we strive to create a nurturing environment where every child can develop their full potential, regardless of their socioeconomic background. <br> Our mission is to break the cycle of poverty and foster a brighter future for the next generation.</p>
+                </div>
+                
+                <h2>Our Impact</h2>
+                <div class="content">
+                    <img src="images/Impact.jpg" alt="Impact Image" class="image-right">
+                    <p class="animate">At Little Dream, we are dedicated to transforming the lives of underprivileged children through education, health, and empowerment programs. Our initiatives provide vital resources such as school supplies, healthcare, and mentorship, helping children realize their potential and achieve their dreams.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="student-info">
+            <div class="student-card animate-card">
+                <h2>Student Information</h2>
+                <p><strong>Name:</strong> Jessica <strong> Student ID: </strong> 20058372</p>
+                <p><strong>Name:</strong> Maitri <strong> Student ID: </strong> 200584759</p>
+                <p><strong>Name:</strong> Navakash <strong> Student ID: </strong> 200584355</p>
+                <p><strong>Name:</strong> Rojin <strong> Student ID: </strong> 200587425</p>
+                
+            </div>
+        </section>
+
+        <div class="section-row">
+          <div class="section-column">
+            Designed by Maitri
+          </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="left-section-footer">
+          <small>© 2024 Little Dream International</small>
+        </div>
+        <div class="mid-section-footer">
+          <nav>
+            <ul>
+              <li>
+                <a href="privacy-policy.html" class="links-footer"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li><a href="contact.html" class="links-footer">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-section-footer">
+          <img
+            src="images/facebook-v1.svg"
+            alt="Logo Facebook"
+            class="facebook-logo"
+          />
+          <img
+            src="images/instagram.svg"
+            alt="Logo Instagram"
+            class="instagram-logo"
+          />
+        </div>
+      </footer>
+  
+      <script>
+        function myFunction() {
+          var hamburguerMenuLinks = document.getElementById("myLinks");
+          if (hamburguerMenuLinks.style.display === "block") {
+            hamburguerMenuLinks.style.display = "none";
+          } else {
+            hamburguerMenuLinks.style.display = "block";
+          }
+        }
+      </script>
+    
+</body>
+</html>

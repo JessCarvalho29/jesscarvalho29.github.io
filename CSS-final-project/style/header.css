@@ -154,4 +154,24 @@ header{
     display: block;
   }
 }
+
+.section-row{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-column{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
   
