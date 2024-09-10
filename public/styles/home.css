@@ -1,13 +1,14 @@
 main{
   position: relative;
   justify-content: space-around;
-  /* align-items: center;  */
+  align-items: center;
 }
 
 .brief-description{
   position: relative;
   padding: 20px 80px;
   flex: 1fr;
+  flex-grow: 1;
 
   display: flex;
   flex-direction: column;
@@ -17,9 +18,17 @@ main{
   padding: 40px;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
 .section-title{
   min-width: 300px;
-  width: 1000px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,11 +43,12 @@ main{
 .description{
   min-width: 300px;
   flex-wrap: wrap;
-  width: 1000px;
+  flex-grow: 1;
+  width: 70%;
   flex: 1fr;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: 16px;
   padding-left: 24px;
   padding-right: 24px;
@@ -53,66 +63,22 @@ main{
 .listed-technologies{
   min-width: 300px;
   flex-wrap: wrap;
-  width: 1000px;
-  display: flex;
-  justify-content: left;
-  align-items: baseline;
-}
-
-.listed-technologies li{
-  justify-content: left;
-  align-items: baseline;
-  width: 1000px;
-}
-
-.links{
-  min-width: 300px;
-  width: 1000px;
-  flex-wrap: wrap;
-  flex: 70px;
+  flex-grow: 1;
+  width: 50%;
+  flex: 1fr;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.links nav ul{
-  display: inline-flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  list-style-type: none;
-  width: 700px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 25px;
-  margin: 0;
-}
-
-.links nav ul li{
-  cursor: pointer;
-}
-
-.links nav ul li a{
-  text-decoration: none;
-  color: rgb(74, 74, 74);
-}
-
-.links nav ul li a:hover{
-  color: rgb(159, 161, 148);
-}
-
-.icon-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.icon{
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  margin-top: 7px;
+.listed-technologies div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .divisory-line{
@@ -135,13 +101,36 @@ main{
 }
 
 .portfolio-grid{
-  /* position: relative; */
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   row-gap: 70px;
-  width: 1000px;
+  width: 70%;
   margin-bottom: 70px;
+}
+
+@media (max-width: 600px){
+  .portfolio-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px){
+  .portfolio-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+@media (min-width: 1400px) and (max-width: 1900px){
+  .portfolio-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1901px){
+  .portfolio-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .portfolio-container{
@@ -153,7 +142,6 @@ main{
 
   background-color: rgb(224, 224, 221);
 
-  /* border: 1px solid black; */
 }
 
 .image-project{
@@ -180,7 +168,6 @@ main{
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
-  /* padding-left: 20px; */
 }
 
 .title-project a{
@@ -197,7 +184,6 @@ main{
 
   font-size: 14px;
   line-height: 15px;
-  /* padding-left: 20px; */
   padding-bottom: 10px;
 }
 
