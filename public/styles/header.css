@@ -1,114 +1,35 @@
-header{
-  position: absolute;
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #E6D6F3;
+  padding: 15px 40px;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
+  z-index: 1000;
+}
 
+.header-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  height: 160px;
-  background-color: rgb(240, 240, 238);
-  padding: 10px 30px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.left-section{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-header{
-  width: 200px;
-  margin-top: 15px;
-}
-
-.middle-section{
-  flex: 2;
-  max-width: 600px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.right-section{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.links-button{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
+.name {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 1.8rem;
   font-weight: 600;
-  line-height: 25px;
-  margin: 0;
-  padding: 12px 24px;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
+  color: #4B3F72;
 }
 
-.links-button:hover {
-  color: rgb(128, 131, 113);
-  background-color: rgb(240, 240, 238);
-}
-
-.right-section a{
+.nav-links a {
+  margin-left: 24px;
+  color: #3AAFA9;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-.icon{
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  margin-bottom: 3px;
+.nav-links a:hover {
+  color: #2F918C;
 }
-
-.divisory-line{
-  position: absolute;
-  bottom: 0;
-  right: 60px;
-  left: 60px;
-  border-bottom: 1px solid rgb(74, 74, 74);
-}
-
-@media (max-width: 600px){
-  .middle-section{
-    flex: 1;
-  }
-
-  .right-section{
-    flex: 5;
-  }
-
-  .links-button{
-    padding: 10px 20px;
-  }
-
-
-}
-
-@media (min-width: 601px) and (max-width: 1200px){
-  .middle-section{
-    flex: 1;
-  }
-
-  .right-section{
-    flex: 1;
-  }
-
-  .links-button{
-    padding: 10px 20px;
-  }
-} 

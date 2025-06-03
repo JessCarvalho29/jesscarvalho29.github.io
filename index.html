@@ -3,20 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="public/styles/general.css" />
     <link rel="stylesheet" href="public/styles/header.css" />
@@ -27,75 +18,58 @@
 
     <title>Jessica Carvalho</title>
   </head>
-  <body>
-    <header>
-      <div class="left-section">
-        <img src="public/images/logo-jessica-carvalho-2.png" class="logo-header" />
-      </div>
-      <div class="middle-section">
-      </div>
-      <div class="right-section">
-        <a href="https://www.linkedin.com/in/carvalhosilva-jessica/"><button class="links-button"><img src="public/icons/icon _Linkedin.png" class="icon"
-          />LinkedIn</button></a>
-          <a href="https://github.com/JessCarvalho29"><button class="links-button"><img src="public/icons/icon _GitHub.png" class="icon"
-            />Github</button></a>
-        <a href="public/Resume - Jessica Carvalho.pdf"><button class="links-button"><img src="public/icons/resume-icon.png" class="icon"
-          />Resume</button></a>
-      </div>
-    </header>
+<body>
+    <header class="main-header">
+  <div class="header-container">
+    <nav class="nav-links">
+      <a href="#my-projects">Projects</a>
+      <a href="public/Resume Jessica Carvalho.pdf" target="_blank">Resume</a>
+      <a href="https://github.com/JessCarvalho29" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/carvalhosilva-jessica/" target="_blank">LinkedIn</a>
+    </nav>
+  </div>
+</header>
     <main>
       <section class="brief-description">
         <div class="row">
-          <div class="section-title">Who I Am</div>
+          <h1 class="section-title">Hey, I’m Jessica — a finance pro turned developer!</h1>
         </div>
         <div class="row">
-          <div class="description">
-            <div>
-              Hey there! I'm Jessica, and I discovered a joy in the world of coding. It all began back in high school when I first studied coding. But my deep interest really developed during my last work experience, where I participated in and managed several projects, closely collaborating with the technology team.
-            </div>
-            <div>
-              My background includes hands-on experience in finance and payment methods, which I'm now blending with my growing expertise in technology. I am confident that my previous experience combined with my growing knowledge in software development makes me a more complete professional. 
-            </div>
-            <div>         
-              Ever since then, I've been constantly searching to learn more about technology. I've taken courses, attended workshops, and worked on personal projects, all to get better at software development. I am currently enrolled at Georgian@Ilac College, where I'm in my third term of the computer programming program. In my journey, I've jumped at every chance to learn and improve.
-            </div>
-            <div>
-              My goal? To make a transition into a career in software development with a big smile on my face and a goal for excellence. Even though I'm still studying, I'm already eager to apply my skills and dive into real-world projects. Let's connect and create something amazing together!
-            </div>
-            <div>Here are a few technologies I've been diving into recently:</div>
+          <div class="description" data-aos="fade-up"> 
+            <p>After years leading financial operations and solving million-dollar problems (literally!), I discovered my real passion: building smart, scalable tech solutions. Whether it's crafting dashboards, automating tasks with Python, or developing full-stack apps, I love connecting the dots between data, development, and impact.</p>
+            <p>Now, I'm diving deeper into software development at Georgian College while working as a Software Developer Co-op at Geotab, where I’m getting hands on with C#, .NET, Superset, CI/CD, and cloud tools.</p>
+            <p>From automating reports in Python to designing personal finance apps in React, my background blends logic, creativity, and curiosity. I’m all about learning, shipping real solutions, and having fun along the way.</p>
+            <p>Let’s build something awesome together!</p>
           </div>
         </div>
-        <div class="row">         
-          <div class="listed-technologies">
-            <div>
-              <nav>
-                <ul>
-                  <li>JavaScript</li>
-                  <li>HTML & CSS</li>
-                  <li>Java</li>
-                  <li>C#</li>
-                </ul>
-              </nav>
-            </div>
-            <div>
-              <nav>
-                <ul>
-                  <li>.NET</li>
-                  <li>Python</li>
-                  <li>SQL</li>
-                  <li>Cloud Computing</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="divisory-line"></div>
+        <hr class="divisory-line" />
       </section>
+
+      <section class="tech-stack" data-aos="fade-up">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-icons">
+          <img src="public/icons/js.svg" alt="JavaScript" />
+          <img src="public/icons/html.svg" alt="HTML" />
+          <img src="public/icons/css.svg" alt="CSS" />
+          <img src="public/icons/java.svg" alt="Java" />
+          <img src="public/icons/python.svg" alt="Python" />
+          <img src="public/icons/csharp.svg" alt="C#" />
+          <img src="public/icons/net.svg" alt=".NET" />
+          <img src="public/icons/react.svg" alt="React" />
+          <img src="public/icons/sql.svg" alt="SQL" />
+          <img src="public/icons/postgresql.svg" alt="PostgreSQL" />
+          <img src="public/icons/mysql.svg" alt="MySQL" />
+          <img src="public/icons/cloud.svg" alt="Cloud" />
+          <img src="public/icons/git.svg" alt="Git" />
+        </div>
+        <hr class="divisory-line" />
+      </section>
+
       <section class="projects">
         <div class="section-title"><a id="my-projects">Projects</a></div>
         <div class="portfolio-grid">
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="https://github.com/JessCarvalho29/FinShark"><img src="public/images/portfolio-app.png" /></a>
             </div>
@@ -107,7 +81,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="https://github.com/JessCarvalho29/website-php"><img src="public/images/pizza-website.png" /></a>
             </div>
@@ -120,7 +94,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="/to-do-list/"><img src="public/images/To Do List.png" /></a>
             </div>
@@ -132,7 +106,7 @@
             </div>
           </div>
 
-                    <div class="portfolio-container">
+                    <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a
                   href="https://www.tinkercad.com/things/cCW4MazmSsN-simon-game?sharecode=vbj4gGkODK_Zj0uRlM-XlyEDe3CFKxkQoCUoUujEoe0"
@@ -148,7 +122,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="/rock-paper-scissors/"><img src="public/images/Rock, paper, scissors.png" /></a>
             </div>
@@ -160,7 +134,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="/tic-tac-toe/"><img src="public/images/Tic tac toe.png" /></a>
             </div>
@@ -172,7 +146,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="/calculator/"><img src="public/images/Calculator.png" /></a>
             </div>
@@ -184,7 +158,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="/stopwatch/"><img src="public/images/Stopwatch.png" /></a>
             </div>
@@ -196,7 +170,7 @@
             </div>
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container" data-aos="zoom-in" data-aos-delay="100">
             <div class="image-project">
               <a href="/youtube-replica/"><img src="public/images/youtube-replica2.png" /></a>
             </div>
@@ -208,7 +182,7 @@
           </div>
 
         </div>
-        <div class="divisory-line" style="margin-bottom: 15px;"></div>
+        <hr class="divisory-line" style="margin-bottom: 15px;" />
       </section>
     </main>
     <footer>
@@ -216,5 +190,12 @@
       <small>Created by Jessica Cavalho</small>
     </div>
     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true  
+    });
+  </script>
   </body>
 </html>
